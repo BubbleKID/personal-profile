@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
       return (
         <footer>
-		    <div class="copyrights">© 2017 All rights reserved. Designed by <a href="http://jiangren.com.au">Jiangren</a></div>
+		    <div className="copyrights">© 2017 All rights reserved. Designed by <a href="http://jiangren.com.au">Jiangren</a></div>
 	    </footer>
       );
     }
