@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 
 import photo from '../images/photo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/owl.carousel.js';
+
+
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
+
 
 class Home extends Component {
     render() {
