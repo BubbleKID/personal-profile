@@ -6,7 +6,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Main from './components/Main';
-import 'normalize.css'; 
+
 import './css/style.css';
 
 

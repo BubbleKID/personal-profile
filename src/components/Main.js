@@ -5,7 +5,7 @@ class Main extends Component {
     render() {
       return (
         <div id="main" className="site-main">
-            <div class="pt-wrapper">
+            <div className="pt-wrapper">
                 <div className="subpages">
                     <Home />
                 </div>

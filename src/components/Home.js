@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-
 import photo from '../images/photo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
-import 'owl.carousel/dist/assets/owl.carousel.css';
+import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/owl.carousel.js';
+import 'owl.carousel/dist/assets/owl.carousel.css';
 
 
 window.jQuery = $;
 window.$ = $;
 global.jQuery = $;
 
-
 class Home extends Component {
-    render() {
+    render() {      
       return (
        <section>
           <div className="pt-page pt-page-current">
@@ -25,53 +24,29 @@ class Home extends Component {
                                     <img src={photo} alt="a"></img>
                                 </div>
                             </div>
-
                             <div className="col-sm-8 col-md-8 col-lg-8">
                                 <div className="title-block">
                                     <h1>John Doe</h1>
-                                    <div className="owl-carousel text-rotation owl-loaded owl-drag">
-                                          <div className="owl-stage-outer">
-                                              <div className="owl-stage">
-                                                  <div className="owl-item cloned">
-                                                      <div className="item">
-                                                          <div className="sp-subtitle">Web Designer</div>
-                                                      </div>
-                                                  </div>
-                                                  <div className="owl-item cloned">
-                                                      <div className="item">
-                                                          <div className="sp-subtitle">Frontend-developer</div>
-                                                      </div>
-                                                  </div><div className="owl-item active" >
-                                                      <div className="item">
-                                                          <div className="sp-subtitle">Web Designer</div>
-                                                      </div>
-                                                  </div>
-                                                  <div className="owl-item" >
-                                                      <div className="item">
-                                                          <div className="sp-subtitle">Frontend-developer</div>
-                                                      </div>
-                                                  </div>
-                                                  <div className="owl-item cloned" >
-                                                      <div className="item">
-                                                          <div className="sp-subtitle">Web Designer</div>
-                                                      </div>
-                                                  </div>
-                                                  <div className="owl-item cloned" >
-                                                      <div className="item">
-                                                          <div className="sp-subtitle">Frontend-developer</div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div className="owl-nav disabled">
-                                              <div className="owl-prev">prev</div>
-                                              <div className="owl-next">next</div>
-                                          </div>
-                                          <div className="owl-dots disabled">
-                                          </div>
-                                      </div>
-                                  </div>
-
+                                    <OwlCarousel className="owl-carousel text-rotation owl-theme "
+                                        loop={ true }
+                                        dots={ false }
+                                        nav={ false }
+                                        margin={ 0 }
+                                        items={ 1 }
+                                        autoplay={ true }
+                                        autoplayHoverPause={ false }
+                                        autoplayTimeout={ 3800 }
+                                        //animateOut={ 'zoomOut' }
+                                        //animateIn={ 'zoomIn' }
+                                    >
+                                        <div className="item">
+                                            <div className="sp-subtitle">Web Designer</div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="sp-subtitle">Frontend-developer</div>
+                                        </div>
+                                    </OwlCarousel>
+                                </div>   
                                 <div className="social-links">
                                     <a href="#"><i className="fa fa-twitter"></i></a>
                                     <a href="#"><i className="fa fa-facebook"></i></a>
