@@ -10,51 +10,32 @@ import './css/animation.css';
 
 import './css/style.css';
 
-
-function whichTransitionEvent(){
-  var t,
-      el = document.createElement("fakeelement");
-
-  var transitions = {
-    "transition"      : "transitionend",
-    "OTransition"     : "oTransitionEnd",
-    "MozTransition"   : "transitionend",
-    "WebkitTransition": "webkitTransitionEnd"
-  }
-
-  for (t in transitions){
-    if (el.style[t] !== undefined){
-      return transitions[t];
-    }
-  }
-}
-var transitionEvent = whichTransitionEvent();
-
 class App extends Component {
   onClickPage = (e) =>{
     //curretn page comes out
-
     var currentPage = document.querySelector('.pt-page-current');
-    var nextPage= document.querySelector('#section_'+ e.target.id );
-    console.log('#section_'+ e.target.id)
-    var sectionName='#section_'+ e.target.id;
+    var nextPage= document.querySelector('#section_'+ e.target.id );    
+    var sectionName='section_'+ e.target.id;
+
     if(currentPage.id !== sectionName)
     {
-      currentPage.classList.remove('pt-page-rotateCarouselLeftIn');
+      //current page left out
       currentPage.classList.add('pt-page-rotateCarouselLeftOut');
+      currentPage.classList.remove('pt-page-current');
       currentPage.addEventListener("animationend",
         function() {
-          currentPage.classList.remove('pt-page-current');
+          console.log('current id ' + document.querySelector('.pt-page-current').id);
+          currentPage.classList.remove('pt-page-rotateCarouselLeftOut');
         });
-      //next page comes in
-      nextPage.classList.add('pt-page-rotateCarouselLeftIn');
-      nextPage.classList.remove('pt-page-rotateCarouselLeftOut');
+      //next page left in
       nextPage.classList.add('pt-page-current');
-      // nextPage.classList.add('pt-page-current');
-      // nextPage.addEventListener("animationend",
-      // function() {
-      // });
-    }                 
+      nextPage.classList.add('pt-page-rotateCarouselLeftIn');
+      nextPage.addEventListener("animationend",
+        function() {
+          nextPage.classList.remove('pt-page-rotateCarouselLeftIn');
+        });
+      
+    }             
   }
 
 
