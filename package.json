@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.14.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
@@ -10,6 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws cp build s3://marksama.com.au --recursive",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

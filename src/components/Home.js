@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import photo from '../images/photo.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Home extends Component {
     render() {
@@ -11,7 +13,7 @@ class Home extends Component {
                         <div className="row">
                             <div className="col-sm-4 col-md-4 col-lg-4">
                                 <div className="photo">
-                                    <img src="../images/photo.png" alt=""></img>
+                                    <img src={photo} alt="a"></img>
                                 </div>
                             </div>
 
