@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Resume extends Component {
     render() {
       return (
-        <section className="pt-page pt-page-current" data-id="resume">
+        <section className="pt-page" id="section_resume">
         <div className="section-inner custom-page-content">
             <div className="page-header color-1">
                 <h2>Resume</h2>

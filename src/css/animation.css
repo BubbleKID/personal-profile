@@ -1,0 +1,30 @@
+.pt-page-rotateCarouselLeftOut {
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-animation: rotateCarouselLeftOut .8s both ease;
+	animation: rotateCarouselLeftOut .8s both ease;
+}
+
+
+.pt-page-rotateCarouselLeftIn {
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-animation: rotateCarouselLeftIn .8s both ease;
+	animation: rotateCarouselLeftIn .8s both ease;
+}
+
+@-webkit-keyframes rotateCarouselLeftIn {
+	from { opacity: .3; -webkit-transform: translateX(200%) scale(.4) rotateY(65deg); }
+}
+@keyframes rotateCarouselLeftIn {
+	from { opacity: .3; -webkit-transform: translateX(200%) scale(.4) rotateY(65deg); transform: translateX(200%) scale(.4) rotateY(65deg); }
+}
+
+@-webkit-keyframes rotateCarouselLeftOut {
+	from { }
+	to { opacity: .3; -webkit-transform: translateX(-150%) scale(.4) rotateY(-65deg); }
+}
+@keyframes rotateCarouselLeftOut {
+	from { }
+	to { opacity: .3; -webkit-transform: translateX(-150%) scale(.4) rotateY(-65deg); transform: translateX(-150%) scale(.4) rotateY(-65deg); }
+}

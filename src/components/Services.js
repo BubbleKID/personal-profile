@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Service extends Component {
     render() {
       return (
-        <section className="pt-page pt-page-current" data-id="services">
+        <section className="pt-page" id="section_services">
         <div className="section-inner custom-page-content">
           <div className="page-header color-1">
             <h2>Services</h2>
