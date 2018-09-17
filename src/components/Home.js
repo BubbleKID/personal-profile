@@ -63,7 +63,7 @@ class Home extends Component {
                                 <div className="block-title">
                                     <h3>About <span>Me</span></h3>
                                 </div>
-                                <p>Hello! I’m Xin Chen.</p>
+                                <p>Hello! I’m Xin Chen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
                             </div>
                         </div>
 
