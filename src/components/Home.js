@@ -25,7 +25,7 @@ class Home extends Component {
                         </div>
                         <div className="col-sm-8 col-md-8 col-lg-8">
                             <div className="title-block">
-                                <h1>John Doe</h1>
+                                <h1>Xin Chen</h1>
                                 <OwlCarousel className="owl-carousel text-rotation owl-theme "
                                     loop={ true }
                                     dots={ false }
@@ -39,7 +39,7 @@ class Home extends Component {
                                     //animateIn={ 'zoomIn' }
                                 >
                                     <div className="item">
-                                        <div className="sp-subtitle">Web Designer</div>
+                                        <div className="sp-subtitle">PHP Developer</div>
                                     </div>
                                     <div className="item">
                                         <div className="sp-subtitle">Frontend-developer</div>
@@ -63,17 +63,15 @@ class Home extends Component {
                                 <div className="block-title">
                                     <h3>About <span>Me</span></h3>
                                 </div>
-                                <p>Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+                                <p>Hello! I’m Xin Chen.</p>
                             </div>
                         </div>
 
                         <div className="col-sm-6 col-md-6 col-lg-6">
-                            <ul className="info-list">
-                                <li><span className="title">Age</span><span className="value">29</span></li>
+                            <ul className="info-list">                                
                                 <li><span className="title">Residence</span><span className="value">Australia</span></li>
-                                <li><span className="title">Address</span><span className="value">Level 3 / 57 Coronation Drive, Brisbane</span></li>
-                                <li><span className="title">e-mail</span><span className="value"><a href="mailto:email@example.com">info@jiangren.com.au</a></span></li>
-                                <li><span className="title">Phone</span><span className="value">+0123 123 456 789</span></li>
+                                <li><span className="title">Address</span><span className="value">Blackburn, VIC</span></li>
+                                <li><span className="title">e-mail</span><span className="value"><a href="mailto:email@example.com">fqchenxin@gmail.com</a></span></li>                               
                             </ul>
                         </div>
 

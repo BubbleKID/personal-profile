@@ -7,7 +7,7 @@ class Header extends Component {
         <header id="site_header" className="header mobile-menu-hide">
         <div className="header-content">
             <div className="site-title-block mobile-hidden">
-                <div className="site-title">John <span>Doe</span></div>
+                <div className="site-title"><span>Xin</span> Chen</div>
             </div>
             {/* Navigation */}
             <div className="site-nav">
