@@ -14,19 +14,19 @@ class Header extends Component {
                 {/* Main menu */}
                 <ul id="nav" className="site-main-menu">
                     <li className="active">
-                        <a className="pt-trigger" href="#home" onClick={this.props.onClickPage}  id="home" data-animation="62">Home</a>{/*href value = data-id without # of .pt-page. */}
+                        <a className="pt-trigger" href="#home" onClick={this.props.onClickPage}  id="home">Home</a>{/*href value = data-id without # of .pt-page. */}
                     </li>
                     <li className="">
-                        <a className="pt-trigger" href="#resume" onClick={this.props.onClickPage} id="resume" data-animation="62">Resume</a>
+                        <a className="pt-trigger" href="#resume" onClick={this.props.onClickPage} id="resume">Resume</a>
+                    </li>
+                    {/* <li className="">
+                        <a className="pt-trigger" href="#services" onClick={this.props.onClickPage} id="services">Services</a>
+                    </li> */}
+                    <li className="">
+                        <a className="pt-trigger" href="#blog" onClick={this.props.onClickPage} id="blog">Blog</a>
                     </li>
                     <li className="">
-                        <a className="pt-trigger" href="#services" onClick={this.props.onClickPage} id="services"  data-animation="62">Services</a>
-                    </li>
-                    <li className="">
-                        <a className="pt-trigger" href="#blog" onClick={this.props.onClickPage} id="blog" data-animation="62">Blog</a>
-                    </li>
-                    <li className="">
-                        <a className="pt-trigger" href="#contact" onClick={this.props.onClickPage} id="contact"  data-animation="62">Contact</a>
+                        <a className="pt-trigger" href="#contact" onClick={this.props.onClickPage} id="contact">Contact</a>
                     </li>
                 </ul>
                 {/*Main menu */}

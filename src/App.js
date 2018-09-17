@@ -7,14 +7,17 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './css/animation.css';
-
 import './css/style.css';
 
 class App extends Component {
   onClickPage = (e) =>{
+    //active menu button
+    document.querySelector('.active').classList.remove('active');
+    e.target.parentElement.classList.add('active');
+
     //curretn page comes out
     var currentPage = document.querySelector('.pt-page-current');
-    var nextPage= document.querySelector('#section_'+ e.target.id );    
+    var nextPage= document.querySelector('#section_'+ e.target.id);    
     var sectionName='section_'+ e.target.id;
 
     if(currentPage.id !== sectionName)
@@ -24,7 +27,7 @@ class App extends Component {
       currentPage.classList.remove('pt-page-current');
       currentPage.addEventListener("animationend",
         function() {
-          console.log('current id ' + document.querySelector('.pt-page-current').id);
+          //console.log('current id ' + document.querySelector('.pt-page-current').id);
           currentPage.classList.remove('pt-page-rotateCarouselLeftOut');
         });
       //next page left in
@@ -34,13 +37,25 @@ class App extends Component {
         function() {
           nextPage.classList.remove('pt-page-rotateCarouselLeftIn');
         });
-      
     }             
   }
-
-
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll.bind(this));
+  }
+  handleScroll(e) {
+    if (document.documentElement.scrollTop < 20) {
+      document.querySelector('.header').classList.remove('sticked');
+    } else {
+      document.querySelector('.header').classList.add('sticked');
+    }    
+    //console.log('this scroll top' + window.scrollTop );
+  }
+  
   render() {
-    return (
+    return (      
       <div className="page">
         <Header onClickPage={this.onClickPage} />
         <div id="main" className="site-main">
@@ -52,11 +67,10 @@ class App extends Component {
                     <Blog />
                     <Contact />
                 </div>
-            </div>
-        </div>    
-      </div>
-      
-      
+            </div>            
+        </div> 
+        <Footer /> 
+      </div>       
     );
   }
 }
