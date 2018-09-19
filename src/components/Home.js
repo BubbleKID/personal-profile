@@ -47,9 +47,9 @@ class Home extends Component {
                                 </OwlCarousel>
                             </div>   
                             <div className="social-links">
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
+                                <a href=""><i className="fa fa-twitter"></i></a>
+                                <a href=""><i className="fa fa-facebook"></i></a>
+                                <a href=""><i className="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ class Home extends Component {
                                 <div className="block-title">
                                     <h3>About <span>Me</span></h3>
                                 </div>
-                                <p>Hello! I’m Xin Chen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+                                <p>Hello! I’m Xin Chen.I am a Front End Developer living in Melbourne</p>
                             </div>
                         </div>
 

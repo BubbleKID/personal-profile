@@ -11,32 +11,40 @@ import './css/style.css';
 
 class App extends Component {
   onClickPage = (e) =>{
-    //active menu button
-    document.querySelector('.active').classList.remove('active');
-    e.target.parentElement.classList.add('active');
+  
+
+    
+
 
     //curretn page comes out
-    var currentPage = document.querySelector('.pt-page-current');
+    var currentPage = document.querySelector('#section_' + document.querySelector('.active>a').id);
+
+    console.log( currentPage.id);
     var nextPage= document.querySelector('#section_'+ e.target.id);    
     var sectionName='section_'+ e.target.id;
 
     if(currentPage.id !== sectionName)
     {
       //current page left out
-      currentPage.classList.add('pt-page-rotateCarouselLeftOut');
-      currentPage.classList.remove('pt-page-current');
-      currentPage.addEventListener("animationend",
-        function() {
-          //console.log('current id ' + document.querySelector('.pt-page-current').id);
-          currentPage.classList.remove('pt-page-rotateCarouselLeftOut');
-        });
-      //next page left in
-      nextPage.classList.add('pt-page-current');
-      nextPage.classList.add('pt-page-rotateCarouselLeftIn');
-      nextPage.addEventListener("animationend",
-        function() {
+      currentPage.classList.add('pt-page-rotateCarouselLeftOut');     
+      currentPage.addEventListener("animationend",     
+        function() {                 
+          currentPage.classList.remove('pt-page-rotateCarouselLeftOut');                 
+        }); 
+        //next page left in
+        nextPage.classList.add('pt-page-current'); 
+        nextPage.classList.add('pt-page-rotateCarouselLeftIn'); 
+        nextPage.addEventListener("animationend",
+        function() {    
           nextPage.classList.remove('pt-page-rotateCarouselLeftIn');
         });
+
+        //active menu button
+        document.querySelector('.active').classList.remove('active');
+        console.log( currentPage.id);
+        currentPage.classList.remove('pt-page-current');
+        e.target.parentElement.classList.add('active');
+        
     }             
   }
   componentDidMount() {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import blog_post1 from '../images/blog/blog_post_1.jpg';
 
 class Blog extends Component {
@@ -65,7 +64,7 @@ class Blog extends Component {
 											</div>
 											<div className="post-info">
 												<ul className="category">
-													<li><a href="#">Travel</a></li>
+													<li><a href="">Travel</a></li>
 												</ul>
 												<a href="blog-post-1.html"><h4 className="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
 											</div>
@@ -87,7 +86,7 @@ class Blog extends Component {
 											</div>
 											<div className="post-info">
 												<ul className="category">
-													<li><a href="#">jQuery</a></li>
+													<li><a href="">jQuery</a></li>
 												</ul>
 												<a href="blog-post-1.html"><h4 className="blog-item-title">One Framework, Every Device</h4></a>
 											</div>
@@ -109,7 +108,7 @@ class Blog extends Component {
 											</div>
 											<div className="post-info">
 												<ul className="category">
-													<li><a href="#">Sport</a></li>
+													<li><a href="">Sport</a></li>
 												</ul>
 												<a href="blog-post-1.html"><h4 className="blog-item-title">Designed for Everyone, Everywhere</h4></a>
 											</div>
@@ -131,7 +130,7 @@ class Blog extends Component {
 											</div>
 											<div className="post-info">
 												<ul className="category">
-													<li><a href="#">CSS</a></li>
+													<li><a href="">CSS</a></li>
 												</ul>
 												<a href="blog-post-1.html"><h4 className="blog-item-title">An Introduction To PostCSS</h4></a>
 											</div>
@@ -153,7 +152,7 @@ class Blog extends Component {
 											</div>
 											<div className="post-info">
 												<ul className="category">
-													<li><a href="#">CSS3</a></li>
+													<li><a href="">CSS3</a></li>
 												</ul>
 												<a href="blog-post-1.html"><h4 className="blog-item-title">Original and Innovative Web Layouts</h4></a>
 											</div>
@@ -175,7 +174,7 @@ class Blog extends Component {
 											</div>
 											<div className="post-info">
 												<ul className="category">
-													<li><a href="#">HTML5</a></li>
+													<li><a href="">HTML5</a></li>
 												</ul>
 												<a href="blog-post-1.html"><h4 className="blog-item-title">Creative and Innovative Navigation Designs</h4></a>
 											</div>

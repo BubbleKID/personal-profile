@@ -77,37 +77,37 @@ class Service extends Component {
 
                 <div className="col-sm-4 col-md-2 subpage-block">
                   <div className="client-block">
-                    <a href="#" target="_blank"><img src="images/clients/client_1.png" alt="image" className="mCS_img_loaded"></img></a>
+                    {/* <a href="" target="_blank"><img src="images/clients/client_1.png" alt="image" className="mCS_img_loaded"></img></a> */}
                   </div>
                 </div>
 
                 <div className="col-sm-4 col-md-2 subpage-block">
                   <div className="client-block">
-                    <a href="#" target="_blank"><img src="images/clients/client_2.png" alt="image" className="mCS_img_loaded"></img></a>
+                    {/* <a href="" target="_blank"><img src="images/clients/client_2.png" alt="image" className="mCS_img_loaded"></img></a> */}
                   </div>
                 </div>
 
                 <div className="col-sm-4 col-md-2 subpage-block">
                   <div className="client-block">
-                    <a href="#" target="_blank"><img src="images/clients/client_3.png" alt="image" className="mCS_img_loaded"></img></a>
+                    {/* <a href="" target="_blank"><img src="images/clients/client_3.png" alt="image" className="mCS_img_loaded"></img></a> */}
                   </div>
                 </div>
 
                 <div className="col-sm-4 col-md-2 subpage-block">
                   <div className="client-block">
-                    <a href="#" target="_blank"><img src="images/clients/client_4.png" alt="image" className="mCS_img_loaded"></img></a>
+                    {/* <a href="" target="_blank"><img src="images/clients/client_4.png" alt="image" className="mCS_img_loaded"></img></a> */}
                   </div>
                 </div>
 
                 <div className="col-sm-4 col-md-2 subpage-block">
                   <div className="client-block">
-                    <a href="#" target="_blank"><img src="images/clients/client_5.png" alt="image" className="mCS_img_loaded"></img></a>
+                    {/* <a href="" target="_blank"><img src="images/clients/client_5.png" alt="image" className="mCS_img_loaded"></img></a> */}
                   </div>
                 </div>
 
                 <div className="col-sm-4 col-md-2 subpage-block">
                   <div className="client-block">
-                    <a href="#" target="_blank"><img src="images/clients/client_6.png" alt="image" className="mCS_img_loaded"></img></a>
+                    {/* <a href="" target="_blank"><img src="images/clients/client_6.png" alt="image" className="mCS_img_loaded"></img></a> */}
                   </div>
                 </div>
 

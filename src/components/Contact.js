@@ -55,7 +55,7 @@ class Contact extends Component {
                       <div className="block-title">
                         <h3>Contact <span>Form</span></h3>
                       </div>
-                      <form id="contact-form" method="post" action="#" novalidate="true">
+                      <form id="contact-form" method="post" action="#" noValidate="true">
 
                         <div className="messages"></div>
 
